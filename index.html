@@ -5,25 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href=".imageGroup.css">
+
 </head>
 <body>
     <p><button id="btn1" >Google Home Page</button></p>
     <p><button id="btn2" >W3-Schools</button></p>
     <p><button id="btn3">Images</button></p>
+</nav>
+
+
+    <div>
+        <p class="attn"><span>Voluptas perspiciatis tempore</span> ut similique excepturi alias.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod cumque corporis dolorum doloremque, quae saepe ipsum fugiat officiis labore eos, distinctio neque veritatis voluptas perspiciatis tempore ut similique excepturi alias.</p>
+        <p><span>Lorem ipsum dolor sit</span>, amet consectetur adipisicing elit. Quod cumque corporis dolorum doloremque, quae saepe ipsum fugiat officiis labore eos, distinctio neque veritatis voluptas perspiciatis tempore ut similique excepturi alias.</p>
+      </div>
     
+      <div class="imageGroup">
+        <img src="https://via.placeholder.com/320x180" alt="Image 1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure doloribus aut, amet repellat dolor recusandae sapiente, maiores quas officia cum nesciunt illum, neque eligendi dolores obcaecati quidem impedit unde pariatur!</p>
+      </div>
+      <div class="imageGroup">
+        <img src="https://via.placeholder.com/320x180" alt="Image 2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure doloribus aut, amet repellat dolor recusandae sapiente, maiores quas officia cum nesciunt illum, neque eligendi dolores obcaecati quidem impedit unde pariatur!</p>
+      </div>
+      <div class="imageGroup">
+        <img src="https://via.placeholder.com/320x180" alt="Image 3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure doloribus aut, amet repellat dolor recusandae sapiente, maiores quas officia cum nesciunt illum, neque eligendi dolores obcaecati quidem impedit unde pariatur!</p>
+      </div>
+      <div class="imageGroup">
+        <img src="https://via.placeholder.com/320x180" alt="Image 4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure doloribus aut, amet repellat dolor recusandae sapiente, maiores quas officia cum nesciunt illum, neque eligendi dolores obcaecati quidem impedit unde pariatur!</p>
+</div>
 </body>
 <script>
-    const googleBtnEl = document.getElementById('btn1');
+    const googleBtnEl = document.getElementsByClassName('imageGroup').style.borderColor="red";
     googleBtnEl.onclick = function () {
       window.open('https://google.com', 'google');
     };
 
-    const w3BtnEl = document.getElementById('btn2');
+    const w3BtnEl = document.getElementByClassName('imageGroup').style.borderColor="red";
     w3BtnEl.onclick = function () {
       window.open('https://www.w3schools.com/js');
     };
 
-    const imagesEl = document.getElementById('btn3');
+    const imagesEl = document.getElementByClassName('imageGroup').style.borderColor="red";
     imagesEl.onclick = function () {
       // these two are equivalent
       // location.href = './images.html';
