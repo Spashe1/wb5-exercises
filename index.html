@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><button id="btn1" >Google Home Page</button></p>
+    <p><button id="btn2" >W3-Schools</button></p>
+    <p><button id="btn3">Images</button></p>
+    
+</body>
+<script>
+    const googleBtnEl = document.getElementById('btn1');
+    googleBtnEl.onclick = function () {
+      window.open('https://google.com', 'google');
+    };
+
+    const w3BtnEl = document.getElementById('btn2');
+    w3BtnEl.onclick = function () {
+      window.open('https://www.w3schools.com/js');
+    };
+
+    const imagesEl = document.getElementById('btn3');
+    imagesEl.onclick = function () {
+      // these two are equivalent
+      // location.href = './images.html';
+      window.open('./images.html', '_self');
+
+      // This one replaces the current page in the browser's history
+      // with the specified location when it redirects
+      // location.replace('./images.html');
+    };
+  </script>
+</html>
+<!-- "https://www.google.com/"
+"https://www.w3schools.com/js/"
+"http://127.0.0.1:5500/images.html" -->
